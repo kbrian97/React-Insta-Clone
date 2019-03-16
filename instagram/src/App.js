@@ -1,27 +1,32 @@
 import React, { Component } from 'react';
-import dummyData from './components/dummy-data';
+import dummyData from './dummy-data';
+import PostContainer from './components/PostContainer/PostContainer';
+import SearchBar from './components/SearchBar/SearchBar';
+import './App.css'
+
 
 class App extends Component {
-  state = {
+  constructor(){
+    super();
+    this.state = {
+        dummy: []
+    }
+  }
 
+  componentDidMount() {
+    this.setState({ dummy: dummyData });
   }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+
+        <SearchBar dummyData={dummyData}/>
+
+        <div className="Container">
+          <PostContainer dummyData={this.state.dummy}/>
+        </div>
+
       </div>
     );
   }

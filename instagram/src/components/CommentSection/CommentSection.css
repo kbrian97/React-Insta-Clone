@@ -1,0 +1,10 @@
+.Comments {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.Comments p {
+    padding-left: 2%;
+    font-size: 0.8rem;
+}

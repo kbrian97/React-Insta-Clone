@@ -1,0 +1,31 @@
+.PostContainer {
+border: 1px solid lightgrey;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+.username { 
+    display: flex;
+    align-items:center;
+}
+
+.username img {
+    width: 10%;
+    border-radius: 50%;
+    margin: 5px 5px;
+}
+
+.PostContainer p {
+    font-weight: bold;
+}
+
+.username p {
+    margin-left: 10px;
+}
+
+.PostImg {
+    width: 100%;
+}
+
+.far {
+    padding: 8px;
+}
