@@ -8,3 +8,8 @@
     padding-left: 2%;
     font-size: 0.8rem;
 }
+
+.fas.fa-heart{
+    color: red;
+    padding: 8px;
+}
