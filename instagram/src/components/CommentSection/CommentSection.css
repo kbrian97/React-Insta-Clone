@@ -1,0 +1,15 @@
+.Comments {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.Comments p {
+    padding-left: 2%;
+    font-size: 0.8rem;
+}
+
+.fas.fa-heart{
+    color: red;
+    padding: 8px;
+}
